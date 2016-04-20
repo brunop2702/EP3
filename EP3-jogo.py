@@ -1,19 +1,17 @@
-import numpy as np
 class jogo:
-    jogadas=[]
-    matriz=np.array([[1,2,3],[4,5,6],[7,8,9]]) 
-    def ___init___(self,jogadas,matriz):
+    matriz=[[1,2,3],[4,5,6],[7,8,9]] 
+    def ___init___(self,matriz):
         self.matriz=matriz
-        self.jogadas=jogadas
         
-    def recebe_jogada(self,linha,coluna):  
-        if len(self.jogadas) % 2 == 0:
-            self.matriz[linha][coluna]=='X'
+    def recebe_jogada(self,linha,coluna, jogadas):  
+        if len(jogadas) % 2 == 0:
+            self.matriz[linha][coluna]='X'
+            jogadas.append(1)  
             return 'X' 
         else:
-            self.matriz[linha][coluna]=='O'
-            return 'O'
-        self.jogadas.append(1) 
+            self.matriz[linha][coluna]='O'
+            jogadas.append(1)  
+            return 'O' 
             
         
     def verifica_ganhador(self):
@@ -53,9 +51,9 @@ class jogo:
         if self.jogadas==9:
             return 0
             
-
+jogadas=[]
 jogo=jogo()
 
 for i in range(0,3):
     for j in range(0,3):
-        print(jogo.recebe_jogada(i,j))
+        print(jogo.recebe_jogada(i,j,jogadas))
