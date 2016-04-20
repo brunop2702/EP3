@@ -7,13 +7,13 @@ class jogo:
         self.jogadas=jogadas
         
     def recebe_jogada(self,linha,coluna):  
-        if len(self.jogadas) % 2==0:
+        if len(self.jogadas) % 2 == 0:
             self.matriz[linha][coluna]=='X'
-            return 'X'
+            return 'X' 
         else:
             self.matriz[linha][coluna]=='O'
             return 'O'
-        self.jogadas.append(1)
+        self.jogadas.append(1) 
             
         
     def verifica_ganhador(self):
