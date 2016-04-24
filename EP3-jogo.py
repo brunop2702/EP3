@@ -53,11 +53,30 @@ class jogo:
             return 0
         else:
             return -1
+    def limpa_jogadas(self):
+        if self.verifica_ganhador()==0:
+            for i in range(0,3):
+                for j in range(0,3):
+                    self.matriz[i][j]=''
+            return ('empate')
+        elif self.verifica_ganhador()==1:
+            for i in range(0,3):
+                for j in range(0,3):
+                    self.matriz[i][j]=''
+            return ('Jogador X ganhou')
+        elif self.verifica_ganhador()==2:
+            for i in range(0,3):
+                for j in range(0,3):
+                    self.matriz[i][j]=''
+            return ('Jogador O ganhou')
+            
             
 jogo=jogo()
 
 for i in range(0,3):
     for j in range(0,3):
         print(jogo.recebe_jogada(i,j)) 
-        print(jogo.verifica_ganhador()) 
-jogadas=[]
+        print(jogo.verifica_ganhador())
+        print(jogo.matriz) 
+        print(jogo.limpa_jogadas())
+jogadas=[] 
