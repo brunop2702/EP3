@@ -12,7 +12,7 @@ class Jogo:
             self.jogadas.append(1)  
             return 'X' 
         else:
-            self.matriz[linha][coluna]='O'
+            self.matriz[linha][coluna]='O' 
             self.jogadas.append(1)  
             return 'O' 
             
@@ -82,4 +82,4 @@ for i in range(0,3):
         print(jogo.matriz) 
         print(jogo.limpa_jogadas())
 print(jogo.jogadas)
-print(jogo.matriz)
+print(jogo.matriz) 

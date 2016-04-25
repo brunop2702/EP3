@@ -6,6 +6,7 @@ Created on Wed Apr 20 07:40:13 2016
 """
 
 import tkinter as tk
+from EP3¨jogo import * 
 
 class Tabuleiro:
     def __init__(self):
