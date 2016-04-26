@@ -3,6 +3,7 @@ class Jogo:
     def __init__(self):
         self.jogadas=[]
         self.matriz=[[1,2,3],[4,5,6],[7,8,9]]
+        self.proxima='X'
         #self.matriz=matriz
         #self.jogadas=jogadas
         
@@ -10,12 +11,14 @@ class Jogo:
         if len(self.jogadas) % 2 == 0:
             self.matriz[linha][coluna]='X'
             self.jogadas.append(1)  
+            self.proxima='O'
             return 'X' 
-        else:
+        else: 
             self.matriz[linha][coluna]='O' 
             self.jogadas.append(1)  
+            self.proxima='X'
             return 'O' 
-            
+        print(self.matriz)
         
     def verifica_ganhador(self):
         if len(self.jogadas)>4: 
@@ -78,7 +81,7 @@ jogo=Jogo()
 for i in range(0,3):
     for j in range(0,3):
         print(jogo.recebe_jogada(i,j)) 
-        print(jogo.verifica_ganhador())
+       
         print(jogo.matriz) 
         print(jogo.limpa_jogadas())
 print(jogo.jogadas)
