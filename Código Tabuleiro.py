@@ -64,47 +64,165 @@ class Tabuleiro:
         self.botao1.configure(text=self.jogo.recebe_jogada(0,0))    
         self.label.configure(text='proxima jogada:{0}'.format(self.jogo.proxima))
         print(self.jogo.verifica_ganhador())
-        self.jogo.limpa_jogadas
-    
+        if self.jogo.verifica_ganhador()!=(-1):
+            self.label.configure(text=self.jogo.limpa_jogadas())
+            self.botao1.configure(text=self.jogo.matriz[0][0])
+            self.botao2.configure(text=self.jogo.matriz[0][0])
+            self.botao3.configure(text=self.jogo.matriz[0][0])
+            self.botao4.configure(text=self.jogo.matriz[0][0])
+            self.botao5.configure(text=self.jogo.matriz[0][0])
+            self.botao6.configure(text=self.jogo.matriz[0][0])
+            self.botao7.configure(text=self.jogo.matriz[0][0])
+            self.botao8.configure(text=self.jogo.matriz[0][0])
+            self.botao9.configure(text=self.jogo.matriz[0][0])
+            self.jogo.jogadas=[]
+            print(self.jogo.matriz)
+        
+        
     def mudar2(self):
         self.botao2.configure(text=self.jogo.recebe_jogada(0,1))    
         self.label.configure(text='proxima jogada:{0}'.format(self.jogo.proxima))
         print(self.jogo.verifica_ganhador())
+        if self.jogo.verifica_ganhador()!=(-1):
+            self.label.configure(text=self.jogo.limpa_jogadas())
+            self.botao1.configure(text=self.jogo.matriz[0][0])
+            self.botao2.configure(text=self.jogo.matriz[0][0])
+            self.botao3.configure(text=self.jogo.matriz[0][0])
+            self.botao4.configure(text=self.jogo.matriz[0][0])
+            self.botao5.configure(text=self.jogo.matriz[0][0])
+            self.botao6.configure(text=self.jogo.matriz[0][0])
+            self.botao7.configure(text=self.jogo.matriz[0][0])
+            self.botao8.configure(text=self.jogo.matriz[0][0])
+            self.botao9.configure(text=self.jogo.matriz[0][0])
+            self.jogo.jogadas=[]
+            print(self.jogo.matriz)
+            
     def mudar3(self):
         
         self.botao3.configure(text=self.jogo.recebe_jogada(0,2))    
         self.label.configure(text='proxima jogada:{0}'.format(self.jogo.proxima))
         print(self.jogo.verifica_ganhador())
-        
+        if self.jogo.verifica_ganhador()!=(-1):
+            self.label.configure(text=self.jogo.limpa_jogadas())
+            self.botao1.configure(text=self.jogo.matriz[0][0])
+            self.botao2.configure(text=self.jogo.matriz[0][0])
+            self.botao3.configure(text=self.jogo.matriz[0][0])
+            self.botao4.configure(text=self.jogo.matriz[0][0])
+            self.botao5.configure(text=self.jogo.matriz[0][0])
+            self.botao6.configure(text=self.jogo.matriz[0][0])
+            self.botao7.configure(text=self.jogo.matriz[0][0])
+            self.botao8.configure(text=self.jogo.matriz[0][0])
+            self.botao9.configure(text=self.jogo.matriz[0][0])
+            self.jogo.jogadas=[]
+            print(self.jogo.matriz)
+            
     def mudar4(self):
         self.botao4.configure(text=self.jogo.recebe_jogada(1,0))    
         self.label.configure(text='proxima jogada:{0}'.format(self.jogo.proxima))
         print(self.jogo.verifica_ganhador())
-        
+        if self.jogo.verifica_ganhador()!=(-1):
+            self.label.configure(text=self.jogo.limpa_jogadas())
+            self.botao1.configure(text=self.jogo.matriz[0][0])
+            self.botao2.configure(text=self.jogo.matriz[0][0])
+            self.botao3.configure(text=self.jogo.matriz[0][0])
+            self.botao4.configure(text=self.jogo.matriz[0][0])
+            self.botao5.configure(text=self.jogo.matriz[0][0])
+            self.botao6.configure(text=self.jogo.matriz[0][0])
+            self.botao7.configure(text=self.jogo.matriz[0][0])
+            self.botao8.configure(text=self.jogo.matriz[0][0])
+            self.botao9.configure(text=self.jogo.matriz[0][0])
+            self.jogo.jogadas=[]
+            print(self.jogo.matriz)
+            
     def mudar5(self):
         self.botao5.configure(text=self.jogo.recebe_jogada(1,1))    
         self.label.configure(text='proxima jogada:{0}'.format(self.jogo.proxima))
         print(self.jogo.verifica_ganhador())
-
+        if self.jogo.verifica_ganhador()!=(-1):
+            self.label.configure(text=self.jogo.limpa_jogadas())
+            self.botao1.configure(text=self.jogo.matriz[0][0])
+            self.botao2.configure(text=self.jogo.matriz[0][0])
+            self.botao3.configure(text=self.jogo.matriz[0][0])
+            self.botao4.configure(text=self.jogo.matriz[0][0])
+            self.botao5.configure(text=self.jogo.matriz[0][0])
+            self.botao6.configure(text=self.jogo.matriz[0][0])
+            self.botao7.configure(text=self.jogo.matriz[0][0])
+            self.botao8.configure(text=self.jogo.matriz[0][0])
+            self.botao9.configure(text=self.jogo.matriz[0][0])
+            self.jogo.jogadas=[]
+            print(self.jogo.matriz)
+            
     def mudar6(self):
         self.botao6.configure(text=self.jogo.recebe_jogada(1,2))    
         self.label.configure(text='proxima jogada:{0}'.format(self.jogo.proxima))
         print(self.jogo.verifica_ganhador())
-         
+        if self.jogo.verifica_ganhador()!=(-1):
+            self.label.configure(text=self.jogo.limpa_jogadas())
+            self.botao1.configure(text=self.jogo.matriz[0][0])
+            self.botao2.configure(text=self.jogo.matriz[0][0])
+            self.botao3.configure(text=self.jogo.matriz[0][0])
+            self.botao4.configure(text=self.jogo.matriz[0][0])
+            self.botao5.configure(text=self.jogo.matriz[0][0])
+            self.botao6.configure(text=self.jogo.matriz[0][0])
+            self.botao7.configure(text=self.jogo.matriz[0][0])
+            self.botao8.configure(text=self.jogo.matriz[0][0])
+            self.botao9.configure(text=self.jogo.matriz[0][0])
+            self.jogo.jogadas=[]
+            print(self.jogo.matriz)
+            
     def mudar7(self):
         self.botao7.configure(text=self.jogo.recebe_jogada(2,0))    
         self.label.configure(text='proxima jogada:{0}'.format(self.jogo.proxima))
         print(self.jogo.verifica_ganhador())
-
+        if self.jogo.verifica_ganhador()!=(-1):
+            self.label.configure(text=self.jogo.limpa_jogadas())
+            self.botao1.configure(text=self.jogo.matriz[0][0])
+            self.botao2.configure(text=self.jogo.matriz[0][0])
+            self.botao3.configure(text=self.jogo.matriz[0][0])
+            self.botao4.configure(text=self.jogo.matriz[0][0])
+            self.botao5.configure(text=self.jogo.matriz[0][0])
+            self.botao6.configure(text=self.jogo.matriz[0][0])
+            self.botao7.configure(text=self.jogo.matriz[0][0])
+            self.botao8.configure(text=self.jogo.matriz[0][0])
+            self.botao9.configure(text=self.jogo.matriz[0][0])
+            self.jogo.jogadas=[]
+            print(self.jogo.matriz)
+            
     def mudar8(self):
         self.botao8.configure(text=self.jogo.recebe_jogada(2,1))    
         self.label.configure(text='proxima jogada:{0}'.format(self.jogo.proxima))
         print(self.jogo.verifica_ganhador())
-
+        if self.jogo.verifica_ganhador()!=(-1):
+            self.label.configure(text=self.jogo.limpa_jogadas())
+            self.botao1.configure(text=self.jogo.matriz[0][0])
+            self.botao2.configure(text=self.jogo.matriz[0][0])
+            self.botao3.configure(text=self.jogo.matriz[0][0])
+            self.botao4.configure(text=self.jogo.matriz[0][0])
+            self.botao5.configure(text=self.jogo.matriz[0][0])
+            self.botao6.configure(text=self.jogo.matriz[0][0])
+            self.botao7.configure(text=self.jogo.matriz[0][0])
+            self.botao8.configure(text=self.jogo.matriz[0][0])
+            self.botao9.configure(text=self.jogo.matriz[0][0])
+            self.jogo.jogadas=[]
+            print(self.jogo.matriz)
+            
     def mudar9(self):
         self.botao9.configure(text=self.jogo.recebe_jogada(2,2))    
         self.label.configure(text='proxima jogada:{0}'.format(self.jogo.proxima))
         print(self.jogo.verifica_ganhador())
-
+        if self.jogo.verifica_ganhador()!=(-1):
+            self.label.configure(text=self.jogo.limpa_jogadas())
+            self.botao1.configure(text=self.jogo.matriz[0][0])
+            self.botao2.configure(text=self.jogo.matriz[0][0])
+            self.botao3.configure(text=self.jogo.matriz[0][0])
+            self.botao4.configure(text=self.jogo.matriz[0][0])
+            self.botao5.configure(text=self.jogo.matriz[0][0])
+            self.botao6.configure(text=self.jogo.matriz[0][0])
+            self.botao7.configure(text=self.jogo.matriz[0][0])
+            self.botao8.configure(text=self.jogo.matriz[0][0])
+            self.botao9.configure(text=self.jogo.matriz[0][0])
+            self.jogo.jogadas=[]
+            print(self.jogo.matriz)
+            
 app= Tabuleiro()
 
