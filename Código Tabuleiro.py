@@ -222,7 +222,7 @@ class Tabuleiro:
             self.botao8.configure(text=self.jogo.matriz[0][0])
             self.botao9.configure(text=self.jogo.matriz[0][0])
             self.jogo.jogadas=[]
-            print(self.jogo.matriz)
+            print(self.jogo.matriz) 
             
 app= Tabuleiro()
 
