@@ -7,6 +7,7 @@ class Tabuleiro:
         self.window = tk.Tk()
         self.window.title("Jogo da Velha") 
         self.iniciar()
+        
 
     def iniciar(self): 
         self.botao1= tk.Button(self.window) 
@@ -224,5 +225,5 @@ class Tabuleiro:
             self.jogo.jogadas=[]
             print(self.jogo.matriz) 
             
-app= Tabuleiro()
+app= Tabuleiro() 
 
